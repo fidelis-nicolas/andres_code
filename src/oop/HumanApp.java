@@ -10,24 +10,22 @@ public class HumanApp {
         firstHuman.color = "White";
         firstHuman.height = 2.1;
 
+        double result = firstHuman.calculate(34.99, 56.90);
+        System.out.println(result);
+
+        System.out.println(firstHuman.humanPassword());
+
         Human secondHuman = new Human();
         secondHuman.name = "fidelis";
         secondHuman.color = "Blue";
         secondHuman.height = 2.9;
         secondHuman.age = 29;
+        System.out.println(secondHuman.humanPassword());
 
-        System.out.println(secondHuman.name);
-        System.out.println(secondHuman.age);
-        System.out.println(secondHuman.height);
-        System.out.println(secondHuman.color);
         secondHuman.eat();
         firstHuman.move("London");
 
 
-        System.out.println(firstHuman.name);
-        System.out.println(firstHuman.age);
-        System.out.println(firstHuman.height);
-        System.out.println(firstHuman.color);
         firstHuman.eat(); // calling eat method
         secondHuman.move("Los Angeles");
 

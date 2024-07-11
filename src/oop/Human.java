@@ -40,4 +40,19 @@ public class Human {
     public void move(String destination){
         System.out.println("Moving to " + destination );
     }
+
+    public String humanPassword(){
+        StringBuilder info = new StringBuilder();
+        info.append("Name : " + name+"\n");
+        info.append("Age :" + age +"\n");
+        info.append("Color :" + color +"\n");
+        info.append("Height :" + height +"\n");
+
+        return info.toString();
+    }
+
+    public double calculate(double firstNum, double secondNum){
+        double total = firstNum + secondNum;
+        return total;
+    }
 }
